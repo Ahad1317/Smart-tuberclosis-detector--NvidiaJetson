@@ -1,6 +1,6 @@
 # Smart Tuberculosis Detection with NVIDIA Jetson Nano 🚀
 
-![Smart Psio (1)](https://github.com/Ahad1317/Smart-tuberclosis-detector--NvidiaJetson/assets/96586030/ac90ea47-1f17-4065-a39e-d25126329e5c)
+![Smart Psio (2)](https://github.com/Ahad1317/Smart-tuberclosis-detector--NvidiaJetson/assets/96586030/1b26afb1-2095-42e3-bd5a-f43e7f3987fc)
 
 ## Abstract 📄
 This project harnesses the NVIDIA Jetson Nano to develop a sophisticated, real-time tuberculosis detection system utilizing advanced deep learning and image processing techniques. This innovative solution aims to aid in the early detection and monitoring of tuberculosis, offering a non-invasive, transformative approach to managing this respiratory disease.
@@ -52,7 +52,7 @@ The system can be utilized in various settings:
 
 - Open terminal
   
-- clone the repository 
+- clone the repository and open directiry in terminal
 ```bash
 git clone https://github.com/Ahad1317/Smart-tuberclosis-detector--NvidiaJetson
 ```
@@ -65,11 +65,42 @@ docker/run.sh
 video-viewer /dev/video0
 ```
 - **Now download the dataset and paste into**
-  -- **Download here**: [Dataset](https://www.kaggle.com/datasets/mohamedhanyyy/chest-ctscan-images)
+  -- **Download here**: [Dataset](https://www.kaggle.com/jtiptj/chest-xray-pneumoniacovid19tuberculosis/download)
 ```
-python/training/classification/data
+python/training/classification/data/xray
 ```
-- **In same folder create label.txt containing the label "Tuberculosis"**
+- **In same folder create labels.txt containing the label "Tuberculosis"**
+  
+- Train xray dataset
+```
+python3 train.py --model-dir=models/xray --batch-size=4 --workers=1 --epochs=35 data/xray
+```
+
+- export the trained model in onnx file
+```
+python3 onnx_export.py --model-dir=models/xray
+```
+### Testing
+
+- open the repo directly in terminal
+
+- run docker docker/run.sh
+
+- change directory
+```
+cd python/training/classification
+```
+
+- to test:
+```
+imagenet --model=models/xray/resnet18.onnx --input_blob=input_0 --output_blob=output_0 --labels=data/xray/labels.txt data/Project/Test02/Input/mix data/Project/Test02/Output
+```
+- For webcam based detection
+```
+imagenet --model=models/xray/resnet18.onnx --input_blob=input_0 --output_blob=output_0 --labels=data/xray/labels.txt /dev/video0
+```
+
+
 ## Conclusion 📜
 
 In conclusion, this project not only aims to provide a technological solution to a complex medical problem but also strives to make healthcare more accessible and efficient. Through the use of cutting-edge technology like the NVIDIA Jetson Nano, Smart tuberuclosis Detection has the potential to transform how psoriasis is managed and treated, improving the quality of life for millions of patients worldwide.
