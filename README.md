@@ -56,7 +56,19 @@ clone the repository
 ```bash
 git clone https://github.com/Ahad1317/Smart-tuberclosis-detector--NvidiaJetson
 ```
-
+run docker container (enter jetson password)
+```
+docker/run.sh
+```
+check if model has installed properly(camera will run)
+```
+video-viewer /dev/video0
+```
+**Now download the dataset and paste into**
+- **Download here**: [Dataset](https://www.kaggle.com/datasets/mohamedhanyyy/chest-ctscan-images)
+```
+python/training/classification/data
+```
 ## Conclusion 📜
 
 In conclusion, this project not only aims to provide a technological solution to a complex medical problem but also strives to make healthcare more accessible and efficient. Through the use of cutting-edge technology like the NVIDIA Jetson Nano, Smart tuberclosis Detection has the potential to transform how psoriasis is managed and treated, improving the quality of life for millions of patients worldwide.
