@@ -1,4 +1,4 @@
-# Smart Tuberclosis Detection with NVIDIA Jetson Nano 🚀
+# Smart Tuberculosis Detection with NVIDIA Jetson Nano 🚀
 
 ![Smart Psio (1)](https://github.com/Ahad1317/Smart-tuberclosis-detector--NvidiaJetson/assets/96586030/ac90ea47-1f17-4065-a39e-d25126329e5c)
 
@@ -52,26 +52,27 @@ The system can be utilized in various settings:
 
 - Open terminal
   
-clone the repository 
+- clone the repository 
 ```bash
 git clone https://github.com/Ahad1317/Smart-tuberclosis-detector--NvidiaJetson
 ```
-run docker container (enter jetson password)
+- run docker container (enter jetson password)
 ```
 docker/run.sh
 ```
-check if model has installed properly(camera will run)
+- check if model has installed properly(camera will run)
 ```
 video-viewer /dev/video0
 ```
-**Now download the dataset and paste into**
-- **Download here**: [Dataset](https://www.kaggle.com/datasets/mohamedhanyyy/chest-ctscan-images)
+- **Now download the dataset and paste into**
+  -- **Download here**: [Dataset](https://www.kaggle.com/datasets/mohamedhanyyy/chest-ctscan-images)
 ```
 python/training/classification/data
 ```
+- **In same folder create label.txt containing the label "Tuberculosis"**
 ## Conclusion 📜
 
-In conclusion, this project not only aims to provide a technological solution to a complex medical problem but also strives to make healthcare more accessible and efficient. Through the use of cutting-edge technology like the NVIDIA Jetson Nano, Smart tuberclosis Detection has the potential to transform how psoriasis is managed and treated, improving the quality of life for millions of patients worldwide.
+In conclusion, this project not only aims to provide a technological solution to a complex medical problem but also strives to make healthcare more accessible and efficient. Through the use of cutting-edge technology like the NVIDIA Jetson Nano, Smart tuberuclosis Detection has the potential to transform how psoriasis is managed and treated, improving the quality of life for millions of patients worldwide.
 
 ---
 
