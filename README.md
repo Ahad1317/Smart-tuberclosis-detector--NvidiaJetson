@@ -105,6 +105,12 @@ imagenet --model=models/xray/resnet18.onnx --input_blob=input_0 --output_blob=ou
 
 In conclusion, this project not only aims to provide a technological solution to a complex medical problem but also strives to make healthcare more accessible and efficient. Through the use of cutting-edge technology like the NVIDIA Jetson Nano, Smart tuberuclosis Detection has the potential to transform how psoriasis is managed and treated, improving the quality of life for millions of patients worldwide.
 
----
+## Shout outs 📣
+The product is built by the following member(s):
+
+| ![Abdul Ahad](https://avatars.githubusercontent.com/u/96586030?v=4&s=80)<br>[Abdul Ahad](https://github.com/Ahad1317) | ![Disha Yadav](https://avatars.githubusercontent.com/u/91051022?v=4&s=80)<br>[Disha Yadav](https://github.com/disha2301) |
+| :---: | :---: |
+
+
 
 Feel free to star and fork this repository if you find this project interesting!
