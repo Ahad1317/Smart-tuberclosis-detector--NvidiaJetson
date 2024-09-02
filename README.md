@@ -108,7 +108,8 @@ In conclusion, this project not only aims to provide a technological solution to
 ## Shout outs 📣
 The product is built by the following member(s):
 
-| ![Abdul Ahad](https://avatars.githubusercontent.com/u/96586030?v=4&s=80)<br>[Abdul Ahad](https://github.com/Ahad1317) | ![Disha Yadav](https://avatars.githubusercontent.com/u/91051022?v=4&s=80)<br>[Disha Yadav](https://github.com/disha2301) |
-| :---: | :---: |
+| ![Abdul Ahad](https://avatars.githubusercontent.com/u/96586030?v=4&s=80)<br>[Abdul Ahad](https://github.com/Ahad1317) | ![Disha Yadav](https://avatars.githubusercontent.com/u/91051022?v=4&s=80)<br>[Disha Yadav](https://github.com/disha2301) | ![Tanu Chauhan](https://avatars.githubusercontent.com/u/95824978?v=4&s=80)<br>[Tanu Chauhan](https://github.com/tanuu07) |
+|--------------------------------------------------|--------------------------------------------------|--------------------------------------------------|
+
 
 Feel free to star and fork this repository if you find this project interesting!
